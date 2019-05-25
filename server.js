@@ -66,7 +66,7 @@ io.sockets.on('connection', function (socket) {
       'result' : 'success',
       'room' : room joined,
       'username' : username that joined,
-      'socket_id : the socket id of the person that,
+      'socket_id' : the socket id of the person that,
       'memembership' : number of people in the room including the new one
     }
     or
@@ -144,7 +144,7 @@ io.sockets.on('connection', function (socket) {
                           socket_id: socket_in_room,
                           membership: numClients
                         };
-        socket.emit('join_room_response',success_date);
+        socket.emit('join_room_response',success_data);
     }
 
     log('join_room success');
